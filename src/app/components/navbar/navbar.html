@@ -1,0 +1,24 @@
+<nav ng-controller="NavController" class="navbar">
+
+    <ul class="main-menu">
+        <a href="/"><img src="../assets/images/sailer.jpg" alt=""></a>
+        <li class="active"><a ng-href="#" translate="sailing_school">dfgzdfgzd</a>
+        </li>
+        <li>
+            <a ng-href="#" translate="conditions_of_program"></a>
+            <ul class="menu-2">
+                <li><a href="#" translate="training_program"></a></li>
+                <li><a href="#" translate="leaders"></a></li>
+                <li><a href="#" translate="own_ships"></a></li>
+                <li><a href="#" translate="route"></a></li>
+                <li><a href="#" translate="food"></a></li>
+                <li><a href="#" translate="bath"></a></li>
+            </ul>
+        </li>
+        <li><a ng-href="/contacts" translate="contacts"></a></li>
+    </ul>
+    <div class="translate-buttons">
+        <button ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU">+</button>
+        <button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN">-</button>
+    </div>
+</nav>

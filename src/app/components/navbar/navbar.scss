@@ -1,0 +1,107 @@
+.navbar {
+  z-index: 9999;
+  font-family: 'Underdog', cursive !important;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border-radius: 0;
+  //background-image: url("../assets/images/sea_water_waves.jpg");
+  //background-repeat: repeat;
+  //background-size: 120px;
+  background-color: #191919;
+  //border-bottom-left-radius: 2px;
+  //border-bottom-right-radius: 2px;
+
+  .main-menu {
+    float: left;
+    padding: 0;
+    margin: 0;
+
+    & > a:first-child {
+      float: left;
+      padding: 5px 13px 5px 10px;
+      img {
+        height: 40px;
+        border-radius: 2px;
+      }
+    }
+    > li {
+      float: left;
+      position: relative;
+      display: block;
+      > a {
+        transition: 0.7s;
+        font-size: larger;
+        position: relative;
+        display: block;
+        padding: 15px;
+        line-height: 20px;
+        color: white;
+      }
+      > a:hover {
+        background-color: rgb(54, 84, 85);
+        border-radius: 2px;
+      }
+      > a:hover + .menu-2 {
+        opacity: 100;
+        margin-top: 8px;
+        li {
+          padding-bottom: 5px;
+        }
+      }
+      &.active a {
+        background-color: #152e33;
+        border-radius: 2px;
+      }
+      .menu-2:before {
+        position: absolute;
+        top: -20px;
+        content: '';
+        border: 10px solid transparent;
+        border-bottom: 10px solid #152e33;
+      }
+      .menu-2 {
+        margin-top: -300px;
+        opacity: 100;
+        transition: 0.9s;
+        position: fixed;
+        background-color: rgba(54, 84, 85, 0.93);
+        padding: 5px 15px;
+        border-radius: 2px;
+        border-top: 3px solid #152e33;
+        border-bottom: 3px solid #152e33;
+        li {
+          transition: 0.7s;
+          list-style-type: none;
+          a {
+            color: white;
+            padding-bottom: 100px;
+          }
+        }
+      }
+      .menu-2:hover {
+        opacity: 100;
+        margin-top: 0;
+        li {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .translate-buttons {
+    margin: 13px 5px 0 0;
+    float: right;
+    button {
+      border-radius: 2px;
+      padding: 1px 6px 3px 6px; // top->
+      border: none;
+      background-color: rgb(54, 84, 85);
+      color: white;
+      transition: 0.7s;
+    }
+    button:hover{
+      color: #152e33;
+      background-color: white;
+    }
+  }
+}
