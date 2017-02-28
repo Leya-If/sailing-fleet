@@ -25,6 +25,18 @@
                 templateUrl: 'app/contacts/contacts.html',
                 controller: 'ContController',
                 controllerAs: 'cont'
+            })
+            .state('about', {
+                url: '/about',
+                templateUrl: 'app/about_program/about.html',
+                controller: 'AboutController',
+                controllerAs: 'about'
+            })
+            .state('school', {
+                url: '/school',
+                templateUrl: 'app/school/school.html',
+                controller: 'SchoolController',
+                controllerAs: 'school'
             });
 
         $urlRouterProvider.otherwise('/');
