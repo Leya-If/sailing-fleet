@@ -36,7 +36,7 @@
         display: block;
         padding: 15px;
         line-height: 20px;
-        color: white;
+        color: #fcf8e3;
       }
       > a:hover {
         background-color: rgb(54, 84, 85);
@@ -74,7 +74,7 @@
           transition: 0.7s;
           list-style-type: none;
           a {
-            color: white;
+            color: #fcf8e3;
             padding-bottom: 100px;
           }
         }
@@ -92,16 +92,24 @@
     margin: 13px 5px 0 0;
     float: right;
     button {
+      outline: none;
       border-radius: 2px;
       padding: 1px 6px 3px 6px; // top->
       border: none;
       background-color: #152e33;
-      color: white;
+      color: #fcf8e3;
       transition: 0.7s;
+    }
+    button.active{
+      background-color: #fcf8e3;
+      color: #152e33;
+    }
+    button:focus{
+      outline: none;
     }
     button:hover{
       color: #152e33;
-      background-color: white;
+      background-color: #fcf8e3;
     }
   }
 }

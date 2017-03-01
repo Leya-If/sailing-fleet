@@ -1,8 +1,10 @@
 <nav ng-controller="NavController" class="navbar">
 
     <ul class="main-menu">
-        <a href="/"><img src="../assets/images/sailer.jpg" alt=""></a>
-        <li class="active"><a ng-href="/school" translate="sailing_school">dfgzdfgzd</a>
+        <a href="/"><img src="/assets/images/sailer.jpg" alt=""></a>
+        <li ng-class="{ active: isActive('/')}">
+            <a ng-href="/school" translate="sailing_school" ng-class="{ active: isActive('/')}">
+            </a>
         </li>
         <li>
             <a ng-href="/about" translate="conditions_of_program"></a>
@@ -18,7 +20,7 @@
         <li><a ng-href="/contacts" translate="contacts"></a></li>
     </ul>
     <div class="translate-buttons">
-        <button ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU">+</button>
-        <button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN">-</button>
+        <button ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU" ng-class="ru ? 'active' : ''">+</button>
+        <button ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN" ng-class="en ? 'active' : ''">-</button>
     </div>
 </nav>
