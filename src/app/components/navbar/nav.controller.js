@@ -11,8 +11,8 @@
     /** @ngInject */
     function NavController($translate, $scope) {
 
-        $scope.en = true;
-        $scope.ru = false;
+        $scope.en = false;
+        $scope.ru = true;
         $scope.changeLanguage = function (key) {
             $translate.use(key);
             key == 'ru' ? $scope.ru = true : $scope.ru = false;

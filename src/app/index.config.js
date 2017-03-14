@@ -42,7 +42,7 @@
       prefix: 'app/translations/data-',
       suffix: '.json'
     });
-    $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('ru');
     $translateProvider.useSanitizeValueStrategy('escapeParameters');
   }
 

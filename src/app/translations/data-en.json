@@ -1,17 +1,24 @@
 {
-  "TITLE": "Sailing Fleet",
-
-  "sailing_school": "Sailing school",
-  "contacts": "Contacts",
-
-  "conditions_of_program": "Conditions of program",
-  "training_program": "Training Program",
-  "leaders": "Leaders",
-  "own_ships": "Own ships",
-  "route": "Routes",
-  "food": "Food",
-  "bath": "Bath, Body Care",
-
   "BUTTON_LANG_EN": "en",
-  "BUTTON_LANG_RU": "ru"
+  "BUTTON_LANG_RU": "ru",
+  "TITLE": "Sailing Fleet",
+  "menu": {
+    "sailing_school": "Sailing school",
+    "contacts": "Contacts",
+    "conditions_of_program": "Conditions of program",
+    "training_program": "Training Program",
+    "leaders": "Leaders",
+    "own_ships": "Own ships",
+    "route": "Routes",
+    "food": "Food",
+    "bath": "Bath, Body Care"
+  },
+  "texts-about":{
+    "training_program_text": "",
+    "leaders_text": "",
+    "own_ships_text": "",
+    "route_text": "",
+    "food_text": "",
+    "bath_text": ""
+  }
 }
