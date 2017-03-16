@@ -1,0 +1,326 @@
+<div class="container about">
+    <div class="choose row">
+        <a href="#"
+           ng-click="training_program_show = true;
+                    leaders = false;
+                    own_ships = false;
+                    route = false;
+                    food = false;
+                    bath = false"
+           ng-class="training_program_show ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.training_program"></h4>
+                    <img src="/assets/images/slider1.jpg" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="#"
+           ng-click="training_program_show = false;
+                    leaders = true;
+                    own_ships = false;
+                    route = false;
+                    food = false;
+                    bath = false"
+           ng-class="leaders ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.leaders"></h4>
+                    <img src="/assets/images/slider2.jpg" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="#"
+           ng-click="training_program_show = false;
+                    leaders = false;
+                    own_ships = true;
+                    route = false;
+                    food = false;
+                    bath = false"
+           ng-class="own_ships ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.own_ships"></h4>
+                    <img src="/assets/images/slider3.jpg" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="#"
+           ng-click="training_program_show = false;
+                    leaders = false;
+                    own_ships = false;
+                    route = true;
+                    food = false;
+                    bath = false"
+           ng-class="route ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.route"></h4>
+                    <img src="/assets/images/slider1.jpg" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="#"
+           ng-click="training_program_show = false;
+                    leaders = false;
+                    own_ships = false;
+                    route = false;
+                    food = true;
+                    bath = false"
+           ng-class="food ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.food"></h4>
+                    <img src="/assets/images/slider2.jpg" alt="">
+                </div>
+            </div>
+        </a>
+        <a href="#"
+           ng-click="training_program_show = false;
+                    leaders = false;
+                    own_ships = false;
+                    route = false;
+                    food = false;
+                    bath = true"
+           ng-class="bath ? 'active' : ''">
+            <div class="choose-claster col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                <div class="choose-round">
+                    <h4 translate="menu.bath"></h4>
+                    <img src="/assets/images/slider3.jpg" alt="">
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="text-about training_program" ng-show="training_program_show">
+        <h2 translate="menu.training_program"></h2>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text1"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text2"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text3"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text4"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text5"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text6"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text7"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text8"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text9"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.training_program_text.text10"></div>
+        </div>
+    </div>
+    <div class="text-about leaders" ng-show="leaders">
+        <h2 translate="menu.leaders"></h2>
+        <div translate="texts-about.leaders_text.intro"></div>
+        <div>
+            <h3 translate="texts-about.leaders_text.leader1.name"></h3>
+            <div class="div-image-portrait">
+                <img src="/assets/images/maska.jpg" alt="">
+            </div>
+            <div translate="texts-about.leaders_text.leader1.about"></div>
+        </div>
+    </div>
+    <div class="text-about own_ships" ng-show="own_ships">
+        <h2 translate="menu.own_ships"></h2>
+        <div class="div-img">
+            <img src="/assets/images/no_photo.jpg" alt="">
+        </div>
+        <div translate="texts-about.own_ships_text.text1"></div>
+        <div class="div-img">
+            <img src="/assets/images/no_photo.jpg" alt="">
+        </div>
+        <div translate="texts-about.own_ships_text.text2"></div>
+    </div>
+    <div class="text-about route" ng-show="route">
+        <h2 translate="menu.route"></h2>
+        <div>
+            <h3 translate="texts-about.route_text.day1.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day1.text1"></div>
+            <div translate="texts-about.route_text.day1.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day2.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day2.text1"></div>
+            <div translate="texts-about.route_text.day2.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day3.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day3.text1"></div>
+            <div translate="texts-about.route_text.day3.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day4.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day4.text1"></div>
+            <div translate="texts-about.route_text.day4.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day5.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day5.text1"></div>
+            <div translate="texts-about.route_text.day5.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day6.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day6.text1"></div>
+            <div translate="texts-about.route_text.day6.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day7.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day7.text1"></div>
+            <div translate="texts-about.route_text.day7.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day8.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day8.text1"></div>
+            <div translate="texts-about.route_text.day8.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day9.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day9.text1"></div>
+            <div translate="texts-about.route_text.day9.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day10.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day10.text1"></div>
+            <div translate="texts-about.route_text.day10.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day11.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day11.text1"></div>
+            <div translate="texts-about.route_text.day11.text2"></div>
+        </div>
+        <div>
+            <h3 translate="texts-about.route_text.day12.title"></h3>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.route_text.day12.text1"></div>
+            <div translate="texts-about.route_text.day12.text2"></div>
+        </div>
+    </div>
+    <div class="text-about food" ng-show="food">
+        <h2 translate="menu.food"></h2>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text1"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text2"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text3"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text4"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text5"></div>
+        </div>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.food_text.text6"></div>
+        </div>
+    </div>
+    <div class="text-about bath" ng-show="bath">
+        <h2 translate="menu.bath"></h2>
+        <div>
+            <div class="div-img">
+                <img src="/assets/images/no_photo.jpg" alt="">
+            </div>
+            <div translate="texts-about.bath_text.text1"></div>
+        </div>
+    </div>
+</div>

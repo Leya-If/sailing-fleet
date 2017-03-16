@@ -1,6 +1,16 @@
 .about {
   .choose {
     a {
+      .choose-claster:hover {
+        .choose-round {
+          h4 {
+            opacity: 1;
+          }
+          img {
+            height: 160px;
+          }
+        }
+      }
       .choose-claster {
         padding-top: 20px;
         .choose-round {
@@ -12,7 +22,7 @@
           background-color: #152e33;
           h4 {
             transition: 1s;
-            opacity: 0;
+            opacity: 100;
             font-family: 'Underdog', cursive !important;
             border-radius: 2px;
             padding: 4px;
@@ -31,43 +41,48 @@
           }
         }
       }
-      .choose-claster:hover {
-        .choose-round {
-          h4{
-            opacity: 100;
-          }
-          img {
-            height: 160px;
-          }
-        }
-      }
     }
     a.active {
       .choose-claster {
         .choose-round {
           h4 {
-            opacity: 100;
+            opacity: 1 !important;
           }
         }
       }
     }
   }
-  .text-about{
+  .text-about {
     margin-top: 20px;
     text-align: justify;
     text-indent: 10px;
-    >div{
+    > div {
       border-top: 2px solid gray;
       margin: 20px 0;
       padding: 20px 0;
-      >div{
-        img{
-          width: 300px;
-          border-radius: 2px;
-          border: 2px solid gray;
-        }
-        margin-bottom: 15px;
-      }
     }
+
+  }
+}
+
+.div-img {
+  img {
+    width: 300px;
+    border-radius: 2px;
+    border: 2px solid gray;
+  }
+  margin-bottom: 15px;
+}
+
+.div-image-portrait {
+  text-indent: 0;
+  border-radius: 2px;
+  border: 2px solid gray;
+  display: inline-block;
+  max-width: 300px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  img {
+    height: 300px;
   }
 }

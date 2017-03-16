@@ -6,7 +6,7 @@
         .config(routerConfig);
 
     /** @ngInject */
-    function routerConfig($stateProvider, $urlRouterProvider, $locationProvider) {
+    function routerConfig($stateProvider) {
         // ui router state inheritance
         $stateProvider
             .state('nav', {
@@ -39,8 +39,7 @@
                 controllerAs: 'school'
             });
 
-        $urlRouterProvider.otherwise('/');
-        $locationProvider.html5Mode(true);
+
 
     }
 
